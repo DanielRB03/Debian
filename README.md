@@ -1,4 +1,4 @@
-# Configuración Debian
+# CONFIGURACIÓN DEBIAN
 
 Lo primero de todo es desactivar el NetworkManager, para ello ejecutaremos el comando: "systemctl disable NetworkManager" y el comando: "systemctl stop NetworkManager".
 
@@ -41,3 +41,11 @@ Para ello tendremos que configurar el Failover en "/etc/dhcp/dhcpd.conf" en los 
 ## Secundario
 
 ![conexion](Imagenes/secundario.png)
+
+# CONEXIÓN A INTERNET
+
+Para tener conexión haremos uso de los nftables, que su función será redireccionar el tráfico de la red desde la tarjeta con adaptador puente pasando por la tarjeta con red interna que es la que proporciona la IP al cliente.
+
+Para ello tendremos que instalar nftables "apt install nftables" y crear un archivo .nft en el que pondremos esta configuración.
+
+![conexion](Imagenes/nft.png)
