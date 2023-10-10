@@ -49,3 +49,11 @@ Para tener conexión haremos uso de los nftables, que su función será redirecc
 Para ello tendremos que instalar nftables "apt install nftables" y crear un archivo .nft en el que pondremos esta configuración.
 
 ![conexion](Imagenes/nft.png)
+
+# COMPROBACIÓN
+
+![conexion](Imagenes/ip.png)
+
+Nos da la IP, ahora comprobar que tenga conexión a internet.
+
+![conexion](Imagenes/inet.png)
